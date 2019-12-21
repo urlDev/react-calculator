@@ -1,0 +1,48 @@
+button {
+    width: 5rem;
+    height: 5rem;
+    background: rgb(77, 77, 77);
+    color: whitesmoke;
+    padding: 0;
+    border: 1px solid lightgray;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+    border: 2px solid whitesmoke;
+}
+
+.double {
+    width: 10rem;
+    background: rgb(7, 90, 138);
+}
+
+.triple {
+    width: 15rem;
+    background: rgb(206, 39, 39);
+}
+
+@media (max-width: 650px) {
+    button {
+        width: 3rem;
+    }
+    .double {
+        width: 6rem;
+    }
+    .triple {
+        width: 9rem;
+    }
+}
+
+@media (max-width: 375px) {
+    button {
+        width: 2rem;
+        height: 3rem
+    }
+    .double {
+        width: 4rem;
+    }
+    .triple {
+        width: 6rem;
+    }
+}

@@ -1,0 +1,17 @@
+#display {
+    height: 6rem;
+    background: black;
+    color: whitesmoke;
+    text-align: right;
+    border: none;
+}
+
+p {
+    position: absolute;
+    top: 13%;
+    left: 93%;
+    transform: translate(-90%, -50%);
+    color: rgb(241, 241, 26);
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;
+}

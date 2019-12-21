@@ -7,6 +7,7 @@ function App() {
 	return (
 		<div className="App">
 			<Calculator />
+      <h1 className="url">by urlDev</h1>
 		</div>
 	);
 }
