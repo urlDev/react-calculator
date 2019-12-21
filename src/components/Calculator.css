@@ -4,4 +4,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border: 5px solid black;
+    width: 24rem;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 24rem;
+    }
+}
+
+@media (max-width:375px) {
+    .container {
+        width: 20rem;
+    }
 }

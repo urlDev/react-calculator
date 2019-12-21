@@ -1,11 +1,12 @@
 button {
-    width: 5rem;
+    width: 6rem;
     height: 5rem;
     background: rgb(77, 77, 77);
     color: whitesmoke;
     padding: 0;
     border: 1px solid lightgray;
     font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
 }
 
 button:hover {
@@ -13,36 +14,36 @@ button:hover {
 }
 
 .double {
-    width: 10rem;
+    width: 12rem;
     background: rgb(7, 90, 138);
 }
 
 .triple {
-    width: 15rem;
+    width: 18rem;
     background: rgb(206, 39, 39);
 }
 
 @media (max-width: 650px) {
     button {
-        width: 3rem;
-    }
-    .double {
         width: 6rem;
     }
+    .double {
+        width: 12rem;
+    }
     .triple {
-        width: 9rem;
+        width: 18rem;
     }
 }
 
 @media (max-width: 375px) {
     button {
-        width: 2rem;
-        height: 3rem
+        width: 5rem;
+        height: 5rem
     }
     .double {
-        width: 4rem;
+        width: 10rem;
     }
     .triple {
-        width: 6rem;
+        width: 15rem;
     }
 }
