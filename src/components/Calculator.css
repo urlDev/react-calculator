@@ -18,3 +18,71 @@
         width: 20rem;
     }
 }
+
+button {
+    width: 6rem;
+    height: 5rem;
+    background: rgb(77, 77, 77);
+    color: whitesmoke;
+    padding: 0;
+    border: 1px solid lightgray;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+}
+
+button:hover {
+    border: 2px solid whitesmoke;
+}
+
+.double {
+    width: 12rem;
+    background: rgb(7, 90, 138);
+}
+
+.triple {
+    width: 18rem;
+    background: rgb(206, 39, 39);
+}
+
+@media (max-width: 650px) {
+    button {
+        width: 6rem;
+    }
+    .double {
+        width: 12rem;
+    }
+    .triple {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 375px) {
+    button {
+        width: 5rem;
+        height: 5rem
+    }
+    .double {
+        width: 10rem;
+    }
+    .triple {
+        width: 15rem;
+    }
+}
+
+#display {
+    height: 6rem;
+    background: black;
+    color: whitesmoke;
+    text-align: right;
+    border: none;
+}
+
+p {
+    position: absolute;
+    top: 13%;
+    left: 93%;
+    transform: translate(-90%, -50%);
+    color: rgb(241, 241, 26);
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;
+}
