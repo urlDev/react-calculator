@@ -25,7 +25,7 @@ const Operators = (props) => {
 	const numOperations = operations.map((operation) => {
 		return (
 			<div onClick={(e) => props.click(e)} id={operation.name} value={operation.symbol} className="operation">
-				<div className="oper">{operation.symbol}</div>
+				{operation.symbol}
 			</div>
 		);
 	});
