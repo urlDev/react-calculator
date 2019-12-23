@@ -1,0 +1,30 @@
+.operation {
+    grid-column: 4 / 5;
+    font-size: 25px;
+    padding: 10px 0;
+    background: rgb(77, 77, 77);
+    color: whitesmoke;
+    transition: all .2s ease-in-out;
+    border: 1px solid lightgray;
+}
+
+.oper {
+    position: relative;
+    top: 20%;
+}
+
+#divide {
+    grid-row: 2 / 3;
+}
+
+#multiply {
+    grid-row: 3 / 4;
+}
+
+#subtract {
+    grid-row: 4 / 5;
+}
+
+#add {
+    grid-row: 5 / 6;
+}

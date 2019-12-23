@@ -2,85 +2,66 @@ import React, { Component } from 'react';
 
 import './Keypad.css';
 
-class Keypad extends Component {
-	constructor(props) {
-		super(props);
+const numbers = [
+	{
+		num: '7',
+		name: 'seven'
+	},
+	{
+		num: '8',
+		name: 'eight'
+	},
+	{
+		num: '9',
+		name: 'nine'
+	},
+	{
+		num: '4',
+		name: 'four'
+	},
+	{
+		num: '5',
+		name: 'five'
+	},
 
-		this.state = {};
+	{
+		num: '6',
+		name: 'six'
+	},
+	{
+		num: '1',
+		name: 'one'
+	},
+	{
+		num: '2',
+		name: 'two'
+	},
+
+	{
+		num: '3',
+		name: 'three'
+	},
+
+	{
+		num: '.',
+		name: 'decimal'
+	},
+
+	{
+		num: '0',
+		name: 'zero'
 	}
+];
 
-	render() {
+const Numbers = (props) => {
+	const numList = numbers.map((num) => {
 		return (
-			<div className="padContainer">
-				<div className="firstLine">
-					<button className="triple" name="AC" onClick={(e) => this.props.onClick(e.target.name)} id="clear">
-						AC
-					</button>
-					<button name="/" onClick={(e) => this.props.onClick(e.target.name)} id="divide">
-						/
-					</button>
-				</div>
-
-				<div className="secondLine">
-					<button name="7" onClick={(e) => this.props.onClick(e.target.name)} id="seven">
-						7
-					</button>
-					<button name="8" onClick={(e) => this.props.onClick(e.target.name)} id="eight">
-						8
-					</button>
-					<button name="9" onClick={(e) => this.props.onClick(e.target.name)} id="nine">
-						9
-					</button>
-					<button name="*" onClick={(e) => this.props.onClick(e.target.name)} id="multiply">
-						x
-					</button>
-				</div>
-
-				<div className="thirdLine">
-					<button name="4" onClick={(e) => this.props.onClick(e.target.name)} id="four">
-						4
-					</button>
-					<button name="5" onClick={(e) => this.props.onClick(e.target.name)} id="five">
-						5
-					</button>
-					<button name="6" onClick={(e) => this.props.onClick(e.target.name)} id="six">
-						6
-					</button>
-					<button name="-" onClick={(e) => this.props.onClick(e.target.name)} id="subtract">
-						-
-					</button>
-				</div>
-
-				<div className="fourthLine">
-					<button name="1" onClick={(e) => this.props.onClick(e.target.name)} id="one">
-						1
-					</button>
-					<button name="2" onClick={(e) => this.props.onClick(e.target.name)} id="two">
-						2
-					</button>
-					<button name="3" onClick={(e) => this.props.onClick(e.target.name)} id="three">
-						3
-					</button>
-
-					<button name="+" onClick={(e) => this.props.onClick(e.target.name)} id="add">
-						+
-					</button>
-				</div>
-
-				<div className="fifthLine">
-					<button name="." onClick={(e) => this.props.onClick(e.target.name)} id="decimal">
-						.
-					</button>
-					<button name="0" onClick={(e) => this.props.onClick(e.target.name)} id="zero">
-						0
-					</button>
-					<button className="double" name="=" onClick={(e) => this.props.onClick(e.target.name)} id="equals">
-						=
-					</button>
-				</div>
+			<div id={num.name} className="number" value={num.num} onClick={(e) => props.click(e)}>
+				<div className="keys">{num.num}</div>
 			</div>
 		);
-	}
-}
+	});
+	return numList;
+};
 
-export default Keypad;
+export default Numbers;

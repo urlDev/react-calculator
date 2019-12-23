@@ -1,0 +1,27 @@
+.number {
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    width: 6rem;
+    height: 5rem;
+    background: rgb(77, 77, 77);
+    color: whitesmoke;
+    padding: 0;
+    border: 1px solid lightgray;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+}
+
+.keys {
+    width: 2rem;
+    position: relative;
+    top: 40%;
+    left: 35%;
+    background: rgb(77, 77, 77);
+    color: whitesmoke;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+}
+
+#zero {
+    grid-column: span 1;
+}

@@ -1,16 +1,36 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-import "./Result.css";
+import './Result.css';
 
-class Result extends Component {
-    render() {
+const operations = [
+	{
+		symbol: '/',
+		name: 'divide'
+	},
+	{
+		symbol: '*',
+		name: 'multiply'
+	},
+	{
+		symbol: '-',
+		name: 'subtract'
+	},
+	{
+		symbol: '+',
+		name: 'add'
+	}
+];
 
-        let { result, newResult } = this.props;
+const Operators = (props) => {
+	const numOperations = operations.map((operation) => {
+		return (
+			<div onClick={(e) => props.click(e)} id={operation.name} value={operation.symbol} className="operation">
+				<div className="oper">{operation.symbol}</div>
+			</div>
+		);
+	});
 
-        return (
-            <div id="display"><p>{result}{newResult}</p></div>
-        );
-    }
-}
+	return numOperations;
+};
 
-export default Result;
+export default Operators;
