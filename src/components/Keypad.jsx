@@ -57,7 +57,7 @@ const Numbers = (props) => {
 	const numList = numbers.map((num) => {
 		return (
 			<div id={num.name} className="number" value={num.num} onClick={(e) => props.click(e)}>
-				<div className="keys">{num.num}</div>
+				{num.num}
 			</div>
 		);
 	});

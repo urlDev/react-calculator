@@ -89,10 +89,11 @@ p {
 
 body {
     font-family: sans-serif;
+    cursor: pointer;
 }
 
 .grid {
-    display: grid;
+    display: inline-grid;
     grid-template-rows: 100px repeat(5, 1fr);
     grid-template-columns: repeat(4, 1fr);
     position: absolute;
@@ -118,8 +119,8 @@ body {
 
 p {
     position: absolute;
-    top: 13%;
-    left: 93%;
+    top: 11%;
+    left: 91%;
     transform: translate(-90%, -50%);
     color: rgb(241, 241, 26);
     font-size: 1rem;
